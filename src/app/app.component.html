@@ -1,41 +1,25 @@
-<div class="container pt-5">
-  <div class="row">
-    <div class="col-sm-auto">
-      <ul>
-        <li>
-          <button mat-raised-button color="accent">
-            Hacer click aqui!
-          </button>
-        </li>
-        <br>
-        <li>
-          <button mat-stroked-button color="primary">
-            Hacer click aqui!
-          </button>
-        </li>
-        <br>
-        <li>
-          <button mat-icon-button color="primary">
-            Hacer click aqui!
-          </button>
-        </li>
-        <br>
-        <li>
-          <button mat-fab color="primary">
-            Click!
-          </button>
-        </li>
-        <br>
-        <li>
-          <button mat-mini-fab="primary">
-            Click!
-          </button>
-        </li>
-      </ul>
-    </div>
-  </div>
+<div class="container pt-5 text-center">
+  <!-- <div class="row"> -->
+  <!-- <div class="col-sm-auto"> -->
+  <mat-toolbar color="primary">
+    Angular material
+  </mat-toolbar>
+
+  <mat-card>
+    <mat-form-field>
+      <input type="text" matInput placeholder="titulo">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-select placeholder="Id del album">
+        <mat-option>1</mat-option>
+        <mat-option>2</mat-option>
+        <mat-option>3</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-card>
+
+  <!-- </div> -->
+  <!-- </div> -->
 </div>
 
 <router-outlet></router-outlet>
-
-
