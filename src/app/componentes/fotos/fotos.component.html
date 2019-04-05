@@ -1,0 +1,25 @@
+
+<mat-card *ngFor='let foto of foterio'>
+  <mat-card-subtitle>
+    {{foto.title}}
+  </mat-card-subtitle>
+  <br>
+  <img [src]="foto.thumbnailUrl" mat-card-image>
+  <mat-card-content>
+    <p>Albun Id: {{foto.albumId}}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <a mat-button mat-raised-button [href]='foto.url' target='_blank'>
+      Ver la imágen
+    </a>
+    <button mat-button mat-flat-button color='primary'>
+      Click!
+    </button>
+  </mat-card-actions>
+</mat-card>
+
+albumId: number,
+id: number,
+title: string,
+url: string,
+thumbnailUrl: string
